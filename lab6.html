@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наша Сім'я - Ласкаво просимо!</title>
+    <style>
+        /* Стилі CSS для красивого вигляду сайту */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f0f8ff, #e6f7ff);
+            color: #333;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #4CAF50; /* Зелений колір */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .navbar {
+            background-color: #333; /* Темно-сірий */
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .navbar a:hover, .navbar a.active {
+            background-color: #575757;
+            color: #4CAF50; /* Зелений колір */
+            border-radius: 5px;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .content h2 {
+            color: #4CAF50; /* Зелений колір */
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+        .content h2::after {
+            content: '';
+            display: block;
+            width: 80%;
+            height: 3px;
+            background-color: #4CAF50; /* Зелений колір */
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+        .family-section {
+            margin-top: 40px;
+        }
+        .family-section img {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .family-section p {
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .contact-info {
+            margin-top: 40px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+        .contact-info h3 {
+            color: #4CAF50; /* Зелений колір */
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            display: inline-block; /* Для центрування блоку ul */
+        }
+        .contact-info ul li {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+            color: #444;
+        }
+        .contact-info ul ul {
+            margin-top: 10px;
+            list-style-type: disc; /* Змінено для внутрішнього списку */
+            margin-left: 25px;
+        }
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background-color: #333; /* Темно-сірий */
+            color: white;
+            font-size: 0.9em;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .blink {
+            animation: blinker 1s linear infinite;
+        }
+        @keyframes blinker {
+
+50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Наша Сім'я</h1>
+    </div>
+
+    <div class="content">
+        <h2>Ласкаво просимо на наш сімейний сайт!</h2>
+        <p>Ми раді поділитися з вами частинкою нашого життя. Тут ви дізнаєтесь більше про кожного члена нашої родини, наші спільні інтереси та багато іншого. Перегляньте фотографію нижче, щоб познайомитися з нами ближче!</p>
+
+        <div class="family-section">
+            <h2>Знайомтесь: Наша Родина</h2>
+            <img src="family_photo.jpg" usemap="#family_members" alt="Фотографія нашої родини" width="600" height="200">
+            <map name="family_members">
+                <area shape="rect" coords="246,164,502,931" href="tato.html" alt="Дізнатись про Олега">
+
+                <area shape="circle" coords="771,0,1100,924" href="mama.html" alt="Дізнатись про Марину">
+
+                <area shape="poly" coords="545,1239,757,407,612,1213" href="kate.html" alt="Дізнатись про Катерину">
+
+                <area shape="default" href="about_us.html" alt="Дізнатись більше про нашу родину">
+            </map>
+            
+        <hr>
+
+        <div class="contact-info">
+            <h3>Зв'яжіться з нами</h3>
+            <ul>
+                <li>Телефон: (123) 12-34-56</li>
+                                <li>Поштова адреса: 123456, м. Місто, вул. Лісова, 106</li>
+                       </div>
+    </div>
+
+    <div class="footer">
+        <p><span class="blink">Copyright</span> &copy; 2025 Наша Сім'я.</p>
+    </div>
+
+</body>
+</html>
